@@ -25,30 +25,18 @@ const Navbar = ({ isDarkMode, toggleDarkMode }) => {
           <div className="hidden md:flex items-center space-x-6">
             <a href="#home" className={navLinkClasses}>Home</a>
             <a href="#about" className={navLinkClasses}>About</a>
-            <a href="#features" className={navLinkClasses}>Contacts</a>
+            <a href="#contacts" className={navLinkClasses}>Contacts</a>
             <a href="#features" className={navLinkClasses}>Features</a>
             <a href="#login" className={navLinkClasses}>Login</a>
-            <button className="bg-teal-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-teal-700 transform hover:-translate-y-0.5 transition-all duration-300 shadow-lg hover:shadow-xl">
+            <button className="bg-gradient-to-r from-teal-600 to-green-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-teal-700 transform hover:-translate-y-0.5 transition-all duration-300 shadow-lg hover:shadow-xl">
               Get Started
             </button>
-            <button
-              onClick={toggleDarkMode}
-              className="p-2 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors duration-300"
-              aria-label="Toggle Dark Mode"
-            >
-              <ThemeIcon isDarkMode={isDarkMode} />
-            </button>
+           
           </div>
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center">
-             <button
-              onClick={toggleDarkMode}
-              className="p-2 mr-2 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white"
-              aria-label="Toggle Dark Mode"
-            >
-              <ThemeIcon isDarkMode={isDarkMode} />
-            </button>
+             
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-gray-800 dark:text-gray-200"

@@ -11,7 +11,7 @@ const App = () => {
     
       <div className="min-h-screen flex flex-col bg-[#f2f2f3]">
         <Navbar />
-        <main className="flex-grow container mx-auto flex items-center justify-center p-4">
+        <main className="flex-grow container mx-auto flex items-center justify-center">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/register" element={<Register />} />
